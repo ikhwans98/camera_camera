@@ -34,7 +34,7 @@ class Camera extends StatefulWidget {
     this.warning,
     this.onChangeCamera,
     this.initialCamera = CameraSide.back,
-    this.resolution = ResolutionPreset.high,
+    this.resolution = ResolutionPreset.max,
     this.enableCameraChange = true,
   }) : super(key: key);
   @override
