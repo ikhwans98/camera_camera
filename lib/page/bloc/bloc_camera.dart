@@ -60,7 +60,7 @@ class BlocCamera {
       await controllCamera.dispose();
     }
     controllCamera =
-        CameraController(cameraDescription, ResolutionPreset.ultraHigh);
+        CameraController(cameraDescription, ResolutionPreset.max);
     controllCamera.addListener(() {
       if (controllCamera.value.hasError) selectCamera.sink.add(false);
     });
